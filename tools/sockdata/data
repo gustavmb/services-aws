@@ -1,0 +1,24 @@
+{
+  "VM": [
+    {
+      "sockpath": "/home/sdp/1/qemu-monitor-socket",
+      "vcpus": [0,1,112,113]
+    },
+    {
+      "sockpath": "/home/sdp/2/qemu-monitor-socket",
+      "vcpus": [2,3,114,115]
+    },
+    {
+      "sockpath": "/home/sdp/3/qemu-monitor-socket",
+      "vcpus": [4,5,116,117]
+    },
+    {
+      "sockpath": "/home/sdp/4/qemu-monitor-socket",
+      "vcpus": [6,7,118,119]
+    },
+    {
+      "sockpath": "/home/sdp/5/qemu-monitor-socket",
+      "vcpus": [8,9,120,121]
+    }
+  ]
+}
