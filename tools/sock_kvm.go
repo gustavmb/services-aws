@@ -95,6 +95,9 @@ func main() {
 		time.Sleep(1e9)
 		result := reader(c)
 		pids := GetPIDs(result)
+    if len(vm.Vcpus) != len(pids) {
+      log.Fatal("Number of PIDS and CPUS are not equal for VM: ", vm.SockPath)
+    }
 		for idx, pid := range pids {
 			go SetCPUAffinity(vm.Vcpus[idx], pid)
 		}
